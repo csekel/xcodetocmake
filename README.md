@@ -1,6 +1,6 @@
 # Xcode to CMake Converter
 
-Hello there! This is a set of simple tool designed by RadNight Technologies LLC. It's made to help you convert basic Xcode `.xcodeproj` projects into `CMakeLists.txt` configurations.
+This is a set of simple tools designed by RadNight Technologies LLC. It's made to help you convert basic Xcode `.xcodeproj` projects into `CMakeLists.txt` configurations.
 
 ## Maintainer
 
