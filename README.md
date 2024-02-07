@@ -24,7 +24,7 @@ RadNight Technologies LLC
 1. Clone the repository.
 2. Run the provided Python script:  
    ```bash
-   python xcode_to_cmake.py
+   python xcodetocmake.py
    ```
 3. When prompted, enter the path to your `.xcodeproj` directory.
 4. Next, enter any dependencies your project requires, separated by spaces (e.g., `pthread OpenGL`).
