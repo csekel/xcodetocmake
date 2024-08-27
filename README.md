@@ -4,7 +4,7 @@ This is a set of simple tools designed by RadNight Technologies LLC. It's made t
 
 ## Maintainer
 
-**CliffSekel**  
+**Cliff Sekel**  
 RadNight Technologies LLC
 
 ## Features
