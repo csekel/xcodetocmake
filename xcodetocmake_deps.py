@@ -48,7 +48,7 @@ def create_cmake_lists(project_path, files, dependencies, include_headers=True, 
     
     try:
         with open('CMakeLists.txt', 'w') as cmake_file:
-            cmake_file.write(f"cmake_minimum_required(VERSION 3.10)\n")
+            cmake_file.write("cmake_minimum_required(VERSION 3.10)\n")
             cmake_file.write(f"project({project_name})\n\n")
             
             # /* Add source files to the executable target */
@@ -76,8 +76,8 @@ def create_cmake_lists(project_path, files, dependencies, include_headers=True, 
             # /* Conditionally handle resources */
             if include_resources and files['resources']:
                 cmake_file.write("\n# Resources\n")
-                cmake_file.write(f"set(RESOURCE_DIR ${{CMAKE_BINARY_DIR}}/Resources)\n")
-                cmake_file.write(f"file(MAKE_DIRECTORY ${{RESOURCE_DIR}})\n")
+                cmake_file.write("set(RESOURCE_DIR ${CMAKE_BINARY_DIR}/Resources)\n")
+                cmake_file.write("file(MAKE_DIRECTORY ${RESOURCE_DIR})\n")
                 for resource in files['resources']:
                     cmake_file.write(f"file(COPY {resource} DESTINATION ${{RESOURCE_DIR}})\n")
             
