@@ -32,7 +32,7 @@ def create_cmake_lists(project_path, source_files):
     # Open a new CMakeLists.txt file in write mode
     with open('CMakeLists.txt', 'w') as cmake_file:
         # Write the minimum required CMake version
-        cmake_file.write(f"cmake_minimum_required(VERSION 3.10)\n")
+        cmake_file.write("cmake_minimum_required(VERSION 3.10)\n")
         # Write the project name
         cmake_file.write(f"project({project_name})\n\n")
         # Start the add_executable command
